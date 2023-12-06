@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <title>Aplicación servicio de garente | Legales.com.co</title>
+      <link rel="icon" href="img/fav.png" type="image/png" sizes="16x16">
+      <link rel="stylesheet" href="css/icofont.min.css">
+      <link rel="stylesheet" href="css/foundation.min.css">
+      <link rel="stylesheet" href="css/fullpage.css">
+      <link rel="stylesheet" href="css/perfect-scrollbar.min.css">
+      <link rel="stylesheet" href="css/modal-animated.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+	
+<body class="solid-bg">
+	
+  <div class="page-loader" id="page-loader">
+	 <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+	  <span>Loading...</span>
+  </div><!-- page loader -->
+	
+  <div class="page-cover" id="s-cover">
+	 <!--<div class="cover-bg">
+		<img src="img/bg-default.jpg" alt="">
+	 </div>-->
+	 <!--<div id="" class="blackish">
+		<div id="home" class="home-bg" data-stellar-background-ratio="0.6">
+			<div id="bg-youtube" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=2uQ58Xwx1V4', 
+				containment:'#home', 
+				showControls:false, 
+				autoPlay:true, 
+				loop:true, 
+				mute:true, 
+				startAt:0, 
+				opacity:1, 
+				addRaster:true,
+				quality:'default'}">
+			</div>
+		</div>
+	  </div>--><!-- background youtube video -->
+  </div>
+	
+  <nav class="quick-link count-4 nav-left">
+	 <div class="logo">
+		<a href="index.html#home">
+		<img src="img/logo_only.png" alt="Logo">
+		</a>
+	 </div>
+	 <ul id="qmenu" class="qmenu">
+		<li data-menuanchor="home">
+		   <a href="index.html#home" class=""><i class="icofont-bow"></i>
+		   </a>
+		   <span class="title">Home</span>
+		</li>
+		<!-- <li data-menuanchor="about-us">
+		   <a href="index.html#about-us"><i class="icofont-info-circle"></i>
+		   </a>
+		   <span class="title">About Us</span>
+		</li> -->
+		<li data-menuanchor="services">
+		   <a href="index.html#services"><i class="icofont-architecture-alt"></i>
+		   </a>
+		   <span class="title">Solicitues</span>
+		</li>
+		<!-- <li data-menuanchor="portfolio">
+		   <a href="index.html#portfolio"><i class="icofont-slidshare"></i>
+		   </a>
+		   <span class="title">portfolio</span>
+		</li>
+		<li data-menuanchor="blog">
+		   <a href="index.html#blog"><i class="icofont-brightkite"></i>
+		   </a>
+		   <span class="title">blog</span>
+		</li>
+		<li data-menuanchor="contact">
+		   <a href="index.html#contact"><i class="icofont-map-pins"></i>
+		   </a>
+		   <span class="title">Contact</span>
+		</li> -->
+	 </ul>
+  </nav><!-- side nav -->
+  
+  <div class="pane-when " id="s-when">
+	 <div class="content">
+		<div class="avatar">
+		   <div class="elem-center">
+			  <div class="">
+				 <img src="img/student.png" alt="">
+			  </div>
+		   </div>
+		</div>
+		<div class="bottombar">
+		   <span>&copy; Alicación Servicio de Garente <a href="https://legales.com.co" style="color: #000;">@Legales.com.co</a> Desarrollador por <a href="https://buckapi.com" style="color: #000;"> Buckapi</a></span>
+		</div>
+	 </div>
+  </div><!-- student image -->
+	
+  <main class="page-main" id="mainpage">
+	 <div class="section page-home page page-cent" id="s-home">
+		<section class="content">
+		   <header class="header">
+			  <div class="h-left">
+				 <h2>Aris Johnson</h2>
+			  </div>
+			  <div class="aris-meta">
+				 <h3>HI, I am a <span></span></h3>
+				 <p>
+					Fifteen years ago I started working with clients and partners, helping them to create innovative projects. I've always been working on these projects with endless passion and an eye for detail. I’m a true specialist when it comes to these type of things.
+				 </p>
+				 <a href="index.html#contact" title="" class="main-btn">Contact Now</a>
+				 <a href="index.html#" title="" class="main-btn">Download CV</a>
+			  </div>
+		   </header>
+		</section>
+		<!-- Scroll down button -->
+		<footer class="p-footer p-scrolldown">
+		   <a href="index.html#services">
+			  <div class="arrow-d">
+				 <div class="before"></div>
+				 <div class="after"></div>
+				 <div class="circle bounce"><i class="icofont-wireless-mouse"></i></div>
+			  </div>
+		   </a>
+		</footer>
+	 </div>
+	 <div class="section page-register page page-cent"  id="s-services">
+		<section class="content">
+		   <header class="p-title">
+			  <h3>
+				 <i class="icofont-architecture-alt"></i> Solicitudes
+				 <span class="animated-bar"></span>
+			  </h3>
+		   </header>
+		   <div id="detailsView" style="display:none;">
+		   	<div class="medium-6 columns">
+					   <ul>
+					   	<li>
+						        <h4>Tipo de Servicio</h4>
+						        <p id="detail-serviceType"></p>
+						    </li>
+						    <li>
+						        <h4>Nombre</h4>
+						        <p id="detail-name"></p>
+						    </li>
+						    <li>
+						        <h4>Tipo de Cliente</h4>
+						        <p id="detail-clientType"></p>
+						    </li>
+
+						    <li>
+						        <h4>Email</h4>
+						        <p id="detail-email"></p>
+						    </li>
+						    <li>
+						        <h4>Teléfono</h4>
+						        <p id="detail-phone"></p>
+						    </li>
+						    <li>
+						        <h4>Tipo de Identidad</h4>
+						        <p id="detail-identityType"></p>
+						    </li>
+						    <li>
+						        <h4>Número de Documento</h4>
+						        <p id="detail-documentNumber"></p>
+						    </li>
+						</ul>
+
+				</div>
+				<div class="medium-6 columns">
+					<li>
+				        <h4>Labor</h4>
+				        <p id="detail-labor"></p>
+				    </li>
+				    <li>
+				        <h4>Declaración</h4>
+				        <p id="detail-declaration"></p>
+				    </li>
+				    <li>
+				        <h4>Comentarios</h4>
+				        <p id="detail-comments"></p>
+				    </li>
+					<h3>Referencias</h3>
+    					<ul id="detail-references"></ul>
+				</div>
+
+		<!-- 	<h4 id="detail-name"></h4>
+		   <h3 id="detail-clientType"></h3>
+			<p id="detail-email"></p>
+			<p id="detail-phone"></p>
+			<p id="detail-identityType"></p>
+			<p id="detail-documentNumber"></p>
+			<p id="detail-serviceType"></p>
+			<p id="detail-labor"></p>
+			<p id="detail-declaration"></p>
+			<p id="detail-comments"></p>-->
+			 
+			
+
+			<button onclick="backToList()">Volver a la Lista</button>
+		 </div>
+
+
+
+		 
+		   <div id="api-results-container"></div>
+		   <!-- <div class="services">
+			  <div class="service-box">
+				 <i class="icofont-bebo"></i>
+				 <h4>Bootstrap Support</h4>
+				 <p>
+					In a professional context it often happens that private clients corder a publication to be made.
+				 </p>
+			  </div>
+		   </div>
+		   <div class="services">
+			  <div class="service-box">
+				 <i class="icofont-heart-alt"></i>
+				 <h4>Portfolio of works</h4>
+				 <p>
+					In a professional context it often happens that private clients corder a publication to be made.
+				 </p>
+			  </div>
+		   </div>
+		   <div class="services">
+			  <div class="service-box">
+				 <i class="icofont-ui-folder"></i>
+				 <h4>Unique Designing</h4>
+				 <p>
+					In a professional context it often happens that private clients corder a publication to be made.
+				 </p>
+			  </div>
+		   </div>
+		   <div class="services">
+			  <div class="service-box">
+				 <i class="icofont-edit"></i>
+				 <h4>Different Layout</h4>
+				 <p>
+					I design and develop services for customers of all sizes, specializing in creating Website.
+				 </p>
+			  </div>
+		   </div> -->
+		</section>
+	 </div>
+	<div class="section page-about page page-cent" id="s-about-us">
+		<section class="content">
+		   <header class="p-title">
+			  <h3>
+				 <i class="icofont-info-circle"></i> About Us
+				 <span class="animated-bar"></span>
+			  </h3>
+			  <h4 class="subhead">We make only beautiful things</h4>
+		   </header>
+		   <div class="about-meta">
+			  <p>
+				 Fifteen years ago I started working with clients and partners, helping them to create innovative projects. I've always been working on these projects with endless passion and an eye for detail. I’m a true specialist when it comes to these type of things:
+			  </p>
+			  <h5>Little About:</h5>
+			  <ul class="about-info">
+				 <li><span>Birthday:</span> 4th april 1991</li>
+				 <li><span>Email:</span> <a href="../../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98f1f6fef7d8fcf7f5f9f1f6b6fbf7f5">[email&#160;protected]</a></li>
+				 <li><span>Age:</span> 24 Years</li>
+				 <li><span>Phone: </span> 820-885-3321</li>
+				 <li><span>Residence:</span> Canada</li>
+				 <li><span>Skype ID:</span> skype.404</li>
+				 <li><span>Address: </span> California, USA</li>
+				 <li><span>Freelance</span> Available</li>
+			  </ul>
+			  <h5>Experties:</h5>
+			  <ul class="list-experties">
+				 <li><i class="icofont-check-circled"></i> Vue.js</li>
+				 <li><i class="icofont-check-circled"></i> Python</li>
+				 <li><i class="icofont-check-circled"></i> PHP</li>
+				 <li><i class="icofont-check-circled"></i> React</li>
+				 <li><i class="icofont-check-circled"></i> HTML</li>
+				 <li><i class="icofont-check-circled"></i> CSS</li>
+			  </ul>
+		   </div>
+		</section>
+	 </div> -->
+	 
+	 <div class="section page-register page page-cent"  id="s-portfolio">
+		<section class="content">
+		   <header class="p-title">
+			  <h3>
+				 <i class="icofont-slidshare"></i> Our Work
+				 <span class="animated-bar"></span>
+			  </h3>
+			  <h4 class="subhead">See our latest work</h4>
+		   </header>
+		   <div class="our-work">
+			  <div class="work-box">
+				 <img src="img/work1.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">industrial design</a></h4>
+				 </div>
+			  </div>
+			  <div class="work-box">
+				 <img src="img/work2.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">Timeless Compaign</a></h4>
+				 </div>
+			  </div>
+			  <div class="work-box">
+				 <img src="img/work3.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">united nature identity</a></h4>
+				 </div>
+			  </div>
+			  <div class="work-box">
+				 <img src="img/work4.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">intraface design</a></h4>
+				 </div>
+			  </div>
+			  <div class="work-box">
+				 <img src="img/work5.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">concept sketch</a></h4>
+				 </div>
+			  </div>
+			  <div class="work-box">
+				 <img src="img/work6.jpg" alt="">
+				 <div class="work-text">
+					<span>branding</span>
+					<h4><a class="popup six" href="index.html#" title="">react websites</a></h4>
+				 </div>
+			  </div>
+		   </div>
+		</section>
+	 </div>
+	 <div class="section page-register page page-cent"  id="s-blog">
+		<section class="content">
+		   <header class="p-title">
+			  <h3>
+				 <i class="icofont-brightkite"></i> Our Blog
+				 <span class="animated-bar"></span>
+			  </h3>
+		   </header>
+		   <div class="blog">
+			  <div class="blog-box">
+				 <figure><img src="img/blog1.jpg" alt=""><span>Dec 12, 2020</span></figure>
+				 <h4><a class="popup six" href="index.html#" title="">We have to launch our new product Pitnik</a></h4>
+			  </div>
+			  <div class="blog-box">
+				 <figure><img src="img/blog2.jpg" alt=""><span>Aug 14, 2020</span></figure>
+				 <h4><a class="popup six" href="index.html#" title="">Five Technicial Tips for developers</a></h4>
+			  </div>
+			  <div class="blog-box">
+				 <figure><img src="img/blog3.jpg" alt=""><span>March 23 , 2020</span></figure>
+				 <h4><a class="popup six" href="index.html#" title="">How to design a website for business</a></h4>
+			  </div>
+			  <div class="blog-box">
+				 <figure><img src="img/blog4.jpg" alt=""><span>Nov 09, 2020</span></figure>
+				 <h4><a class="popup six" href="index.html#" title="">How much cost for Themeforest Project?</a></h4>
+			  </div>
+		   </div>
+		</section>
+	 </div>
+	 <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+		<div class="slide" id="s-information" data-anchor="information">
+		   <section class="content">
+			  <header class="p-title">
+				 <h3>
+					<i class="icofont-map-pins"></i> Contact
+					<span class="animated-bar"></span>
+				 </h3>
+			  </header>
+			  
+			  <div class="contact">
+				 <div class="row">
+					<div class="medium-6 columns">
+					   <ul class="contact-detail">
+						  <li>
+							 <h4>Email</h4>
+							 <p><a href="../../cdn-cgi/l/email-protection#2906064a46475d484a5d6944484045074a4644"><span class="__cf_email__" data-cfemail="2b584a465b474e6b4c464a424705484446">[email&#160;protected]</span></a></p>
+						  </li>
+						  <li>
+							 <h4>Address</h4>
+							 <p>Street 12ce Ontario
+								<br>Canada
+							 </p>
+						  </li>
+						  <li>
+							 <h4>Phone</h4>
+							 <p>+971 123 456 89</p>
+						  </li>
+						  <li  class="show-for-medium-up">
+							 <h4>Find us on</h4>
+							
+							 <div class="socialnet">
+								<a href="index.html#"><i class="icofont-facebook"></i></a>
+								<a href="index.html#"><i class="icofont-instagram"></i></a>
+								<a href="index.html#"><i class="icofont-twitter"></i></a>
+								<a href="index.html#"><i class="icofont-pinterest"></i></a>
+								<a href="index.html#"><i class="icofont-tumblr"></i></a>
+							 </div>
+							
+						  </li>
+					   </ul>
+					</div>
+					<div class="medium-6 columns contact-area">
+					   <h4>Write A Message</h4>
+					   <div>
+						  <div id="message"></div>
+						  <form class="message" method="post" action="https://wpkixx.com/html/Aris/contact.php" id="contactform">
+							 <div class="fields">
+								<div class="input">
+								   <input id="name" type="text" placeholder="Your Name" required>
+								</div>
+							 </div>
+							 <div class="fields">
+								<div class="input">
+								   <input id="email" type="email" placeholder="Email Address" required>
+								</div>
+							 </div>
+							 <div class="fields">
+								<textarea id="comments" placeholder="Message..." rows="3" required></textarea>
+								<div class="buttons">
+								   <button id="submit" type="submit" class="main-btn">Send Now</button>
+									<img src="img/ajax-loader.gif" class="loader" alt="ajax-loader.gif">
+								</div>
+								<div class="g-recaptcha" data-sitekey="6LeBpOgUAAAAAJwweRt7FijmJ7nb1Wm5VTyn9MoR"></div>
+							 </div>
+						  </form>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+		   </section>
+		</div>
+	 </div> -->
+  </main><!-- main content area -->
+	
+  <div id="modal-container">
+	 <div class="modal-background">
+		<div class="modal">
+		   <div class="blog-detail">
+			  <figure><img src="img/blog-detail.jpg" alt=""><span>Feb 27, 2020</span></figure>
+			  <div class="detail-meta">
+				 <h2>Bootstrap is the Most Popular HTML, CSS, and JS Framework</h2>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a fringilla elit, eu mattis arcu. Curabitur augue augue, scelerisque sit amet varius eget, tristique at nisl. In euismod suscipit tristique. Nulla sollicitudin pretium massa sit amet tristique.</p>
+				 <blockquote>
+					<p>
+					   " Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking"
+					</p>
+				 </blockquote>
+				 <p>
+					Praesent ac quam sed magna gravida interdum. Vivamus sed nunc lobortis, tempor ante ut, gravida nibh. Praesent sed euismod odio. Maecenas dui dui, euismod quis lobortis quis, dignissim ut eros. Curabitur cursus lacinia sollicitudin. Aenean vitae erat imperdiet, egestas nisi non, placerat sapien. In nec commodo justo. Nunc posuere lacinia neque eu malesuada. Sed lacus lacus, tincidunt id faucibus eget, sagittis sed enim. Nunc nec dapibus odio.
+				 </p>
+				 <h4>Share</h4>
+				 <ul class="social-media">
+					<li><a href="index.html#"><i class="icofont-facebook"></i></a></li>
+					<li><a href="index.html#"><i class="icofont-instagram"></i></a></li>
+					<li><a href="index.html#"><i class="icofont-twitter"></i></a></li>
+					<li><a href="index.html#"><i class="icofont-pinterest"></i></a></li>
+					<li><a href="index.html#"><i class="icofont-tumblr"></i></a></li>
+				 </ul>
+			  </div>
+		   </div>
+		   <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+			  <rect x="0" y="0" fill="none" width="100%" height="100%" rx="3" ry="3"></rect>
+		   </svg>
+		</div>
+	 </div>
+  </div> --> <!-- modal popup blog detail -->
+	
+  <!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="js/YTPlayer.min.js"></script>
+  <!--<script src="https://www.google.com/recaptcha/api.js"></script> -->
+	<script src="js/main.js"></script>
+	<script>
+		// Declarar una variable global para almacenar los datos
+		var globalData;
+	 
+		function fetchPocketBaseData() {
+		   fetch('https://db.buckapi.com:8085/api/collections/requests/records')
+			  .then(response => {
+				 if (!response.ok) {
+					 throw new Error('Network response was not ok ' + response.statusText);
+				 }
+				 return response.json();
+			  })
+			  .then(data => {
+				 // Asignar datos a la variable global
+				 globalData = data;
+	 
+				 const container = document.getElementById('api-results-container');
+				 container.innerHTML = '';
+	 
+				 globalData.items.forEach((record, index) => {
+					container.innerHTML += `
+						<div class="services" onclick="showDetails(${index})" style="cursor:pointer;">
+							<div class="service-box">
+								<i class="icofont-bebo"></i>
+								<h4>${record.name}</h4>
+								<p>${record.email}</p>
+							</div>
+						</div>`;
+				 });
+			  })
+			  .catch(error => {
+				 console.error('There was a problem with the fetch operation:', error);
+			  });
+		}
+	 
+		function showDetails(index) {
+		   const detailsContainer = document.getElementById('detailsView');
+		   const listContainer = document.getElementById('api-results-container');
+	 
+		   // Usar la variable global para acceder a los datos
+		   const details = globalData.items[index];
+	 
+		   document.getElementById('detail-name').innerText = details.name;
+		   document.getElementById('detail-phone').innerText = details.phone;
+		   document.getElementById('detail-email').innerText = details.email;
+		   document.getElementById('detail-identityType').innerText = details.identityType;
+    		document.getElementById('detail-documentNumber').innerText = details.documentNumber;
+    		document.getElementById('detail-serviceType').innerText = details.serviceType;
+    		document.getElementById('detail-clientType').innerText = details.clientType;
+    		document.getElementById('detail-labor').innerText = details.labor;
+    		document.getElementById('detail-declaration').innerText = details.declaration;
+    		document.getElementById('detail-comments').innerText = details.comments;
+
+	    const referencesList = document.getElementById('detail-references');
+		    referencesList.innerHTML = ''; // Limpiar la lista existente
+
+		    if (globalData.items[index].references && globalData.items[index].references.length) {
+		        globalData.items[index].references.forEach((reference) => {
+		            let li = document.createElement('li');
+		            li.innerText = `Nombre: ${reference.name}, Teléfono: ${reference.phone}, Email: ${reference.email}, Dirección: ${reference.address}`;
+		            referencesList.appendChild(li);
+		        });
+		    } else {
+		        referencesList.innerHTML = '<li>No hay referencias disponibles.</li>';
+		    }
+
+        listContainer.style.display = 'none';
+        detailsContainer.style.display = 'block';
+		}
+	 
+		function backToList() {
+		   document.getElementById('detailsView').style.display = 'none';
+		   document.getElementById('api-results-container').style.display = 'block';
+		}
+	 
+		// Llamada a la función al cargar la página
+		document.addEventListener('DOMContentLoaded', fetchPocketBaseData);
+	 </script>
+	 
+	 
+	 
+</body>
+</html>
