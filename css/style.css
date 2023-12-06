@@ -1512,6 +1512,7 @@ button.main-btn:hover {
     text-align: center;
     vertical-align: top;
     width: 35px;
+    transition: all 0.3s ease;
 }
 .service-box>h4 {
     display: inline-block;
@@ -1524,18 +1525,36 @@ button.main-btn:hover {
     line-height: 24px;
     margin-bottom: 0;
 }
+/* Estilo al pasar el mouse sobre la tarjeta */
+.services:hover {
+    background-color: #8B4513; /* Color marrón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera opcional */
+}
+
+/* Estilo para la tarjeta seleccionada */
+.service-selected {
+    background-color: #000; /* Cambia al color que prefieras */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
 /*-- our portfolio ---*/
 .our-work {
     display: inline-block;
     width: 100%;
     position: relative;
     max-height: 420px;
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    border-radius: 15px;
+    float: left;
+    margin: 0px 20px 20px 4px;
+    padding: 20px 20px;
+    vertical-align: middle;
 }
 .work-box {
     float: left;
     margin: 0 20px 20px 0;
     position: relative;
-    width: 48.4%;
+    width: 44.4%;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, .1);
     border-radius: 12px;
 }
@@ -2159,3 +2178,4 @@ form img.loader {
 #detail-references li {
     margin-bottom: 10px; /* Agrega un poco de espacio entre cada elemento de la lista */
 }
+
